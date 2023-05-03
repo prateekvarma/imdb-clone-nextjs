@@ -1,9 +1,8 @@
-import { ThemeProvider } from "next-themes";
+'use client';
+import { ThemeProvider } from 'next-themes';
 
-function Provider() {
-    return ( <ThemeProvider>
-        
-    </ThemeProvider> );
+function Provider({ children }) {
+  return <ThemeProvider enableSystem={true} attribute='class'>{children}</ThemeProvider>;
 }
 
 export default Provider;
