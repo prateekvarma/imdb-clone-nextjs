@@ -3,7 +3,7 @@ import Link from 'next/link';
 function NavbarItem({ title, param }) {
   return (
     <div>
-      <Link href={`/?genre=${param}`}>{title}</Link>
+      <Link className={`m-4 hover:text-amber-600 font-semibold p-2`} href={`/?genre=${param}`}>{title}</Link>
     </div>
   );
 }
