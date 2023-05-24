@@ -1,10 +1,10 @@
+import Card from "./Card";
+
 function Results({ results }) {
   return (
     <div>
       {results.map((result) => {
-        return <div key={result.id}>
-            {result.original_title}
-        </div>;
+        return <Card key={result.id} result={result} />;
       })}
     </div>
   );
