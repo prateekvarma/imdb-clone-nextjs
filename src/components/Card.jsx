@@ -12,6 +12,8 @@ function Card({ result }) {
           width={500}
           height={300}
           className='sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200'
+          placeholder='blur'
+          blurDataURL='/public/Bean-Eater-spinner.svg'
         ></Image>
       </Link>
     </div>
